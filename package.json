@@ -1,28 +1,28 @@
 {
-  "name": "iobroker.template",
+  "name": "iobroker.mhcclient",
   "version": "0.6.0",
-  "description": "ioBroker template Adapter",
+  "description": "ioBroker mhcclient Adapter",
   "author": {
-    "name": "@@Author@@",
-    "email": "@@email@@"
+    "name": "Daniel Glaser",
+    "email": "the78mole@chaintronics.com"
   },
   "contributors": [
     {
-      "name": "@@Author@@",
-      "email": "@@email@@"
+      "name": "Daniel Glaser",
+      "email": "the78mole@chaintronics.com"
     }
   ],
-  "homepage": "https://github.com/ioBroker/ioBroker.template",
+  "homepage": "https://github.com/the78mole/ioBroker.mhcclient",
   "license": "MIT",
   "keywords": [
     "ioBroker",
-    "template",
+    "mhcclient",
     "Smart Home",
     "home automation"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ioBroker/ioBroker.template"
+    "url": "https://github.com/the78mole/ioBroker.mhcclient"
   },
   "dependencies": {},
   "devDependencies": {
@@ -35,7 +35,7 @@
     "test": "node node_modules/mocha/bin/mocha --exit"
   },
   "bugs": {
-    "url": "https://github.com/ioBroker/ioBroker.template/issues"
+    "url": "https://github.com/the78mole/ioBroker.mhcclient/issues"
   },
   "readmeFilename": "README.md"
 }
