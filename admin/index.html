@@ -32,24 +32,47 @@
     // the function loadSettings has to exist ...
     function load(settings, onChange) {
         // example: select elements with id=key and class=value and insert value
-       if (!settings) return;
+        if (!settings) return;
+
+        getIPs(function(ips) {
+            for (var i = 0; i < ips.length; i++) {
+                $('#bind').append('<option value="' + ips[i].address + '">' + ips[i].name + '</option>');
+            }
+            $('#bind.value').val(settings.bind);
+        });
+
+        console.log("----------------------------------");
+        console.log('Settings :' + JSON.stringify(settings));
+        console.log("----------------------------------");
+
         $('.value').each(function () {
             var $key = $(this);
             var id = $key.attr('id');
             if ($key.attr('type') === 'checkbox') {
-		// do not call onChange direct, because onChange could expect some arguments
-                $key.prop('checked', settings[id]).change(function() {
+                // do not call onChange direct, because onChange could expect some arguments
+                $key.prop('checked', settings[id]).change(function () {
                     onChange();
                 });
             } else {
-		// do not call onChange direct, because onChange could expect some arguments
-                $key.val(settings[id]).change(function() {
+                // do not call onChange direct, because onChange could expect some arguments
+                $key.val(settings[id]).change(function () {
                     onChange();
-                }).keyup(function() {
+                }).keyup(function () {
                     onChange();
                 });
             }
+
         });
+
+        var xp = $('#output\\.xml\\.path');     var xpv = settings['output']['xml']['path'];
+        var xe = $('#output\\.xml\\.enabled');  var xev = settings['output']['xml']['enable'];
+        var jp = $('#output\\.json\\.path');    var jpv = settings['output']['json']['path'];
+        var je = $('#output\\.json\\.enabled'); var jev = settings['output']['json']['enable'];
+        xp.val(xpv, function () { onChange(); });
+        xe.prop('checked', xev, function () { onChange(); });
+        jp.val(jpv, function () { onChange(); });
+        je.prop('checked', jev, function () { onChange(); });
+
         onChange(false);
     }
 
@@ -66,6 +89,18 @@
 				obj[$this.attr('id')] = $this.val();
 			}
         });
+
+        obj.output = {
+            'xml': {
+                'path': $('#output\\.xml\\.path').val(),
+                'enable': $('#output\\.xml\\.enabled').prop('checked')
+            },
+            'json': {
+                'path': $('#output\\.json\\.path').val(),
+                'enable': $('#output\\.json\\.enabled').prop('checked')
+            }
+        };
+
         callback(obj);
     }
 </script>
@@ -75,13 +110,33 @@
 
     <table><tr>
         <td><img src="mhcclient.png"/></td>
-        <td><h3 class="translate">mhcclient adapter settings</h3></td>
+        <td><h3 class="translate">MHC-Client adapter settings</h3></td>
     </tr></table>
-    <p>
-        <span><label for="test1" class="translate">test1</label></span><input class="value" id="test1"/><br>
-        <span><label for="test2" class="translate">test2</label></span><input class="value" id="test2"/><br>
-    </p>
-
+    <table>
+        <tr class="no-if-extend">
+            <td><label for="bind" class="translate">IP</label></td>
+            <td colspan="3"><select class="value" id="bind"></select></td>
+        </tr><tr>
+            <td><span><label for="port" class="translate">Bind Port</label></span></td>
+            <td><input class="value" id="port"/></td>
+            <td><span><label for="enabled" class="translate">Enable</label></span></td>
+            <td><input class="value" type="checkbox" id="enabled"/></td>
+        </tr><tr>
+<!--            <td><span><label for="bind" class="translate">Bind Address</label></span></td>
+            <td><input class="value" id="bind"/></td>
+        </tr><tr> -->
+            <td><span><label for="output.xml.path" class="translate">XML File Path</label></span></td>
+            <td><input class="value" id="output.xml.path"/></td>
+            <td><span><label for="output.xml.enabled" class="translate">Enable</label></span></td>
+            <td><input class="value" type="checkbox" id="output.xml.enabled"/></td>
+        </tr><tr>
+            <td><span><label for="output.json.path" class="translate">JSON File Path</label></span></td>
+            <td><input class="value" id="output.json.path"/></td>
+            <td><span><label for="output.json.enabled" class="translate">Enable</label></span></td>
+            <td><input class="value" type="checkbox" id="output.json.enabled"/></td>
+        </tr><tr>
+        </tr>
+    </table>
     <p class="translate">on save adapter restarts with new config immediately</p>
 
 </div>

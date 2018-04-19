@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<interface MESSAGE_TYPE="1"> 
+<muc MUC_ID="9872f" VERSION="1f6" TIMESTAMP="1524176555"> 
+<meter METER_ID="35001740" INTERFACE="02" USER="WWSLP"> 
+<data DESCRIPTION="Energy" UNIT="kWh" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:1.2.0*7" USER="Monat-8"> 
+<entry> 
+<param NAME="T_MUC">1524176246</param> 
+<param NAME="VAL">1656</param> 
+</entry> 
+<entry> 
+<param NAME="T_MUC">1524176295</param> 
+<param NAME="VAL">1656</param> 
+</entry> 
+<entry> 
+<param NAME="T_MUC">1524176355</param> 
+<param NAME="VAL">1656</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy" UNIT="kWh" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:1.2.0*8" USER="Monat-9"> 
+<entry> 
+<param NAME="T_MUC">1524176114</param> 
+<param NAME="VAL">1567</param> 
+</entry> 
+<entry> 
+<param NAME="T_MUC">1524176221</param> 
+<param NAME="VAL">1567</param> 
+</entry> 
+<entry> 
+<param NAME="T_MUC">1524176246</param> 
+<param NAME="VAL">1567</param> 
+</entry> 
+<entry> 
+<param NAME="T_MUC">1524176295</param> 
+<param NAME="VAL">1567</param> 
+</entry> 
+<entry> 
+<param NAME="T_MUC">1524176355</param> 
+<param NAME="VAL">1567</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy" UNIT="kWh" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:1.2.0*9" USER="Monat-10"> 
+<entry> 
+<param NAME="T_MUC">1524176114</param> 
+<param NAME="VAL">1425</param> 
+</entry> 
+<entry> 
+<param NAME="T_MUC">1524176221</param> 
+<param NAME="VAL">1425</param> 
+</entry> 
+<entry> 
+<param NAME="T_MUC">1524176246</param> 
+<param NAME="VAL">1425</param> 
+</entry> 
+<entry> 
+<param NAME="T_MUC">1524176295</param> 
+<param NAME="VAL">1425</param> 
+</entry> 
+<entry> 
+<param NAME="T_MUC">1524176355</param> 
+<param NAME="VAL">1425</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy" UNIT="kWh" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:1.2.0*10" USER="Monat-11"> 
+<entry> 
+<param NAME="T_MUC">1524176114</param> 
+<param NAME="VAL">1259</param> 
+</entry> 
+<entry> 
+<param NAME="T_MUC">1524176221</param> 
+<param NAME="VAL">1259</param> 
+</entry> 
+<entry> 
+<param NAME="T_MUC">1524176246</param> 
+<param NAME="VAL">1259</param> 
+</entry> 
+<entry> 
+<param NAME="T_MUC">1524176295</param> 
+<param NAME="VAL">1259</param> 
+</entry> 
+<entry> 
+<param NAME="T_MUC">1524176355</param> 
+<param NAME="VAL">1259</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy" UNIT="kWh" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:1.2.0*11" USER="Monat-12"> 
+<entry> 
+<param NAME="T_MUC">1524176114</param> 
+<param NAME="VAL">1087</param> 
+</entry> 
+<entry> 
+<param NAME="T_MUC">1524176221</param> 
+<param NAME="VAL">1087</param> 
+</entry> 
+<entry> 
+<param NAME="T_MUC">1524176246</param> 
+<param NAME="VAL">1087</param> 
+</entry> 
+<entry> 
+<param NAME="T_MUC">1524176295</param> 
+<param NAME="VAL">1087</param> 
+</entry> 
+<entry> 
+<param NAME="T_MUC">1524176355</param> 
+<param NAME="VAL">1087</param> 
+</entry> 
+</data> 
+</meter> 
+<meter METER_ID="00351706" INTERFACE="01" USER="Heizungsstrom"> 
+<data DESCRIPTION="Stand 20170211_1532 = 25590 Wh" UNIT="kWh" SCALE="0.0005" MEDIUM="Electricity" OBIS_ID="1-0:1.8.0*0" USER="HEE201702111532"> 
+<entry> 
+<param NAME="T_MUC">1524176123</param> 
+<param NAME="VAL">309840</param> 
+</entry> 
+</data> 
+</meter> 
+<meter METER_ID="46174428" INTERFACE="02" USER="HKTot"> 
+<data DESCRIPTION="Fabrication" UNIT="None" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="0-0:96.1.0*255" USER="Fabrication"> 
+<entry> 
+<param NAME="T">1524177720</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">46174428</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy" UNIT="kWh" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:1.0.0*255" USER="62"> 
+<entry> 
+<param NAME="T">1524177720</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">30390</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Timestamp" UNIT="UTC" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:0.1.10*100" USER="TSJahr-1"> 
+<entry> 
+<param NAME="T">1514764800</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1514764800</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Timestamp" UNIT="UTC" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:0.1.10*101" USER="TSJahr-2"> 
+<entry> 
+<param NAME="T">1483228800</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1483228800</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy" UNIT="kWh" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:1.2.0*100" USER="Jahr-1"> 
+<entry> 
+<param NAME="T">1514764800</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">30388</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy" UNIT="kWh" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:1.2.0*101" USER="Jahr-2"> 
+<entry> 
+<param NAME="T">1483228800</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">5030</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Timestamp" UNIT="UTC" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:0.1.10*0" USER="TSMonat-1"> 
+<entry> 
+<param NAME="T">1522540800</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1522540800</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy" UNIT="kWh" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:1.2.0*0" USER="Monat-1"> 
+<entry> 
+<param NAME="T">1522540800</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">30388</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.001" MEDIUM="Heat (outlet)" OBIS_ID="6-0:2.0.0*255" USER="61"> 
+<entry> 
+<param NAME="T">1524177720</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1736502</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Flow temperature" UNIT="Degree C" SCALE="0.01" MEDIUM="Heat (outlet)" OBIS_ID="6-0:10.0.0*255" USER="66"> 
+<entry> 
+<param NAME="T">1524177720</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">2391</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Return temperature" UNIT="Degree C" SCALE="0.01" MEDIUM="Heat (outlet)" OBIS_ID="6-0:11.0.0*255" USER="67"> 
+<entry> 
+<param NAME="T">1524177720</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">2342</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Temperature difference" UNIT="K" SCALE="0.01" MEDIUM="Heat (outlet)" OBIS_ID="6-0:12.0.0*255" USER="68"> 
+<entry> 
+<param NAME="T">1524177720</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">49</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Power" UNIT="W" SCALE="100" MEDIUM="Heat (outlet)" OBIS_ID="6-0:8.0.0*255" USER="60"> 
+<entry> 
+<param NAME="T">1524177720</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volume flow" UNIT="m^3/h" SCALE="0.001" MEDIUM="Heat (outlet)" OBIS_ID="6-0:9.0.0*255" USER="65"> 
+<entry> 
+<param NAME="T">1524177720</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Timestamp" UNIT="UTC" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:0.1.10*255" USER="TSNow"> 
+<entry> 
+<param NAME="T">1524177720</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1524177720</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Operating time" UNIT="h" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="0-0:96.8.0*255" USER="OTNow"> 
+<entry> 
+<param NAME="T">1524177720</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">11984</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Error flags (Device type specific)" UNIT="Bin" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="0-0:97.97.0*255" USER="ERR"> 
+<entry> 
+<param NAME="T">1524177720</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Fabrication" UNIT="None" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="0-0:96.1.0*255" USER="Fabrication"> 
+<entry> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">46174428</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Timestamp" UNIT="UTC" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:0.1.10*0" USER="TSMonat-1"> 
+<entry> 
+<param NAME="T">1522540800</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1522540800</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy" UNIT="kWh" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:1.2.0*0" USER="Monat-1"> 
+<entry> 
+<param NAME="T">1522540800</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">30388</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.001" MEDIUM="Heat (outlet)" OBIS_ID="6-0:2.0.0*0" USER="VMonat-1"> 
+<entry> 
+<param NAME="T">1522540800</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1736455</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Timestamp" UNIT="UTC" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:0.1.10*1" USER="TSMonat-2"> 
+<entry> 
+<param NAME="T">1519862400</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1519862400</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy" UNIT="kWh" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:1.2.0*1" USER="Monat-2"> 
+<entry> 
+<param NAME="T">1519862400</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">30388</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.001" MEDIUM="Heat (outlet)" OBIS_ID="6-0:2.0.0*1" USER="VMonat-2"> 
+<entry> 
+<param NAME="T">1519862400</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1736455</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Timestamp" UNIT="UTC" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:0.1.10*2" USER="TSMonat-3"> 
+<entry> 
+<param NAME="T">1517443200</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1517443200</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy" UNIT="kWh" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:1.2.0*2" USER="Monat-3"> 
+<entry> 
+<param NAME="T">1517443200</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">30388</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.001" MEDIUM="Heat (outlet)" OBIS_ID="6-0:2.0.0*2" USER="VMonat-3"> 
+<entry> 
+<param NAME="T">1517443200</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1736455</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Timestamp" UNIT="UTC" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:0.1.10*3" USER="TSMonat-4"> 
+<entry> 
+<param NAME="T">1514764800</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1514764800</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy" UNIT="kWh" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:1.2.0*3" USER="Monat-4"> 
+<entry> 
+<param NAME="T">1514764800</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">30388</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.001" MEDIUM="Heat (outlet)" OBIS_ID="6-0:2.0.0*3" USER="VMonat-4"> 
+<entry> 
+<param NAME="T">1514764800</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1736455</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Timestamp" UNIT="UTC" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:0.1.10*4" USER="TSMonat-5"> 
+<entry> 
+<param NAME="T">1512086400</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1512086400</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy" UNIT="kWh" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:1.2.0*4" USER="Monat-5"> 
+<entry> 
+<param NAME="T">1512086400</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">27091</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.001" MEDIUM="Heat (outlet)" OBIS_ID="6-0:2.0.0*4" USER="VMonat-5"> 
+<entry> 
+<param NAME="T">1512086400</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1519508</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Timestamp" UNIT="UTC" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:0.1.10*5" USER="TSMonat-6"> 
+<entry> 
+<param NAME="T">1509494400</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1509494400</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy" UNIT="kWh" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:1.2.0*5" USER="Monat-6"> 
+<entry> 
+<param NAME="T">1509494400</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">23788</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.001" MEDIUM="Heat (outlet)" OBIS_ID="6-0:2.0.0*5" USER="VMonat-6"> 
+<entry> 
+<param NAME="T">1509494400</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1304866</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Fabrication" UNIT="None" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="0-0:96.1.9*255" USER="Fabrication"> 
+<entry> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">46174428</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Timestamp" UNIT="UTC" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:0.1.10*6" USER="TSMonat-7"> 
+<entry> 
+<param NAME="T">1506816000</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1506816000</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy" UNIT="kWh" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:1.2.0*6" USER="Monat-7"> 
+<entry> 
+<param NAME="T">1506816000</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">22234</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.001" MEDIUM="Heat (outlet)" OBIS_ID="6-0:2.0.0*6" USER="VMonat-7"> 
+<entry> 
+<param NAME="T">1506816000</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1184359</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Timestamp" UNIT="UTC" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:0.1.10*7" USER="TSMonat-8"> 
+<entry> 
+<param NAME="T">1504224000</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1504224000</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy" UNIT="kWh" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:1.2.0*7" USER="Monat-8"> 
+<entry> 
+<param NAME="T">1504224000</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">21439</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.001" MEDIUM="Heat (outlet)" OBIS_ID="6-0:2.0.0*7" USER="VMonat-8"> 
+<entry> 
+<param NAME="T">1504224000</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1091201</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Timestamp" UNIT="UTC" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:0.1.10*8" USER="TSMonat-9"> 
+<entry> 
+<param NAME="T">1501545600</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1501545600</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy" UNIT="kWh" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:1.2.0*8" USER="Monat-9"> 
+<entry> 
+<param NAME="T">1501545600</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">21255</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.001" MEDIUM="Heat (outlet)" OBIS_ID="6-0:2.0.0*8" USER="VMonat-9"> 
+<entry> 
+<param NAME="T">1501545600</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1059000</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Timestamp" UNIT="UTC" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:0.1.10*9" USER="TSMonat-10"> 
+<entry> 
+<param NAME="T">1498867200</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1498867200</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy" UNIT="kWh" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:1.2.0*9" USER="Monat-10"> 
+<entry> 
+<param NAME="T">1498867200</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">21095</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.001" MEDIUM="Heat (outlet)" OBIS_ID="6-0:2.0.0*9" USER="VMonat-10"> 
+<entry> 
+<param NAME="T">1498867200</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1043350</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Timestamp" UNIT="UTC" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:0.1.10*10" USER="TSMonat-11"> 
+<entry> 
+<param NAME="T">1496275200</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1496275200</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy" UNIT="kWh" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:1.2.0*10" USER="Monat-11"> 
+<entry> 
+<param NAME="T">1496275200</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">20850</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.001" MEDIUM="Heat (outlet)" OBIS_ID="6-0:2.0.0*10" USER="VMonat-11"> 
+<entry> 
+<param NAME="T">1496275200</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1018500</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Timestamp" UNIT="UTC" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:0.1.10*11" USER="TSMonat-12"> 
+<entry> 
+<param NAME="T">1493596800</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">1493596800</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy" UNIT="kWh" SCALE="1" MEDIUM="Heat (outlet)" OBIS_ID="6-0:1.2.0*11" USER="Monat-12"> 
+<entry> 
+<param NAME="T">1493596800</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">19955</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.001" MEDIUM="Heat (outlet)" OBIS_ID="6-0:2.0.0*11" USER="VMonat-12"> 
+<entry> 
+<param NAME="T">1493596800</param> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">944836</param> 
+</entry> 
+</data> 
+</meter> 
+<meter METER_ID="60900121" INTERFACE="05" USER="AB OG Bob"> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.0.0*255" USER="85"> 
+<entry> 
+<param NAME="T_MUC">1524176112</param> 
+<param NAME="VAL">61</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.2.0*0" USER="81"> 
+<entry> 
+<param NAME="T_MUC">1524176112</param> 
+<param NAME="VAL">61</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.2.0*1" USER="82"> 
+<entry> 
+<param NAME="T_MUC">1524176112</param> 
+<param NAME="VAL">41</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Error flags (Device type specific)" UNIT="Bin" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="0-0:97.97.0*255" USER="ERR"> 
+<entry> 
+<param NAME="T_MUC">1524176112</param> 
+<param NAME="VAL">2</param> 
+</entry> 
+</data> 
+</meter> 
+<meter METER_ID="60900122" INTERFACE="05" USER="AB OG John"> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.0.0*255" USER="85"> 
+<entry> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">568</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.2.0*0" USER="81"> 
+<entry> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">550</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.2.0*1" USER="82"> 
+<entry> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">388</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Error flags (Device type specific)" UNIT="Bin" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="0-0:97.97.0*255" USER="ERR"> 
+<entry> 
+<param NAME="T_MUC">1524176128</param> 
+<param NAME="VAL">2</param> 
+</entry> 
+</data> 
+</meter> 
+<meter METER_ID="60900123" INTERFACE="05" USER="AB EG Jane"> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.0.0*255" USER="85"> 
+<entry> 
+<param NAME="T_MUC">1524176050</param> 
+<param NAME="VAL">626</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.2.0*0" USER="81"> 
+<entry> 
+<param NAME="T_MUC">1524176050</param> 
+<param NAME="VAL">618</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.2.0*1" USER="82"> 
+<entry> 
+<param NAME="T_MUC">1524176050</param> 
+<param NAME="VAL">460</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Error flags (Device type specific)" UNIT="Bin" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="0-0:97.97.0*255" USER="ERR"> 
+<entry> 
+<param NAME="T_MUC">1524176050</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+</meter> 
+<meter METER_ID="60900124" INTERFACE="05" USER="AB EG Küche Doe"> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.0.0*255" USER="85"> 
+<entry> 
+<param NAME="T_MUC">1524176095</param> 
+<param NAME="VAL">499</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.2.0*0" USER="81"> 
+<entry> 
+<param NAME="T_MUC">1524176095</param> 
+<param NAME="VAL">489</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.2.0*1" USER="82"> 
+<entry> 
+<param NAME="T_MUC">1524176095</param> 
+<param NAME="VAL">313</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Error flags (Device type specific)" UNIT="Bin" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="0-0:97.97.0*255" USER="ERR"> 
+<entry> 
+<param NAME="T_MUC">1524176095</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+</meter> 
+<meter METER_ID="60900125" INTERFACE="05" USER="AB OG Buero"> 
+</meter> 
+<meter METER_ID="60900126" INTERFACE="05" USER="AB OG Kind"> 
+</meter> 
+<meter METER_ID="60900127" INTERFACE="05" USER="AB EG Bad"> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.0.0*255" USER="85"> 
+<entry> 
+<param NAME="T_MUC">1524176071</param> 
+<param NAME="VAL">543</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.2.0*0" USER="81"> 
+<entry> 
+<param NAME="T_MUC">1524176071</param> 
+<param NAME="VAL">521</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.2.0*1" USER="82"> 
+<entry> 
+<param NAME="T_MUC">1524176071</param> 
+<param NAME="VAL">371</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Error flags (Device type specific)" UNIT="Bin" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="0-0:97.97.0*255" USER="ERR"> 
+<entry> 
+<param NAME="T_MUC">1524176071</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+</meter> 
+<meter METER_ID="60900129" INTERFACE="05" USER="AB EG Flur"> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.0.0*255" USER="85"> 
+<entry> 
+<param NAME="T_MUC">1524176049</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.2.0*0" USER="81"> 
+<entry> 
+<param NAME="T_MUC">1524176049</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.2.0*1" USER="82"> 
+<entry> 
+<param NAME="T_MUC">1524176049</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Error flags (Device type specific)" UNIT="Bin" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="0-0:97.97.0*255" USER="ERR"> 
+<entry> 
+<param NAME="T_MUC">1524176049</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+</meter> 
+<meter METER_ID="60900130" INTERFACE="05" USER="AB EG Alice"> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.0.0*255" USER="85"> 
+<entry> 
+<param NAME="T_MUC">1524175892</param> 
+<param NAME="VAL">558</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.2.0*0" USER="81"> 
+<entry> 
+<param NAME="T_MUC">1524175892</param> 
+<param NAME="VAL">538</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.2.0*1" USER="82"> 
+<entry> 
+<param NAME="T_MUC">1524175892</param> 
+<param NAME="VAL">371</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Error flags (Device type specific)" UNIT="Bin" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="0-0:97.97.0*255" USER="ERR"> 
+<entry> 
+<param NAME="T_MUC">1524175892</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+</meter> 
+<meter METER_ID="60900131" INTERFACE="05" USER="AB KG Vorne"> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.0.0*255" USER="85"> 
+<entry> 
+<param NAME="T_MUC">1524176110</param> 
+<param NAME="VAL">66</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.2.0*0" USER="81"> 
+<entry> 
+<param NAME="T_MUC">1524176110</param> 
+<param NAME="VAL">66</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.2.0*1" USER="82"> 
+<entry> 
+<param NAME="T_MUC">1524176110</param> 
+<param NAME="VAL">55</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Error flags (Device type specific)" UNIT="Bin" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="0-0:97.97.0*255" USER="ERR"> 
+<entry> 
+<param NAME="T_MUC">1524176110</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+</meter> 
+<meter METER_ID="60900132" INTERFACE="05" USER="AB OG Bad"> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.0.0*255" USER="85"> 
+<entry> 
+<param NAME="T_MUC">1524175917</param> 
+<param NAME="VAL">303</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.2.0*0" USER="81"> 
+<entry> 
+<param NAME="T_MUC">1524175917</param> 
+<param NAME="VAL">293</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.2.0*1" USER="82"> 
+<entry> 
+<param NAME="T_MUC">1524175917</param> 
+<param NAME="VAL">165</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Error flags (Device type specific)" UNIT="Bin" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="0-0:97.97.0*255" USER="ERR"> 
+<entry> 
+<param NAME="T_MUC">1524175917</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+</meter> 
+<meter METER_ID="60900133" INTERFACE="05" USER="AB EG Kueche WG"> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.0.0*255" USER="85"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">1008</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.2.0*0" USER="81"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">952</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.2.0*1" USER="82"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">635</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Error flags (Device type specific)" UNIT="Bin" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="0-0:97.97.0*255" USER="ERR"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+</meter> 
+<meter METER_ID="60900134" INTERFACE="05" USER="AB KG Hinten"> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.0.0*255" USER="85"> 
+<entry> 
+<param NAME="T_MUC">1524176151</param> 
+<param NAME="VAL">334</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.2.0*0" USER="81"> 
+<entry> 
+<param NAME="T_MUC">1524176151</param> 
+<param NAME="VAL">331</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.2.0*1" USER="82"> 
+<entry> 
+<param NAME="T_MUC">1524176151</param> 
+<param NAME="VAL">244</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Error flags (Device type specific)" UNIT="Bin" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="0-0:97.97.0*255" USER="ERR"> 
+<entry> 
+<param NAME="T_MUC">1524176151</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+</meter> 
+<meter METER_ID="61070071" INTERFACE="05" USER="KW Mieter (+375)"> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.001" MEDIUM="Water" OBIS_ID="8-1:1.0.0*255" USER="50"> 
+<entry> 
+<param NAME="T_MUC">1524175873</param> 
+<param NAME="VAL">167247</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.01" MEDIUM="Water" OBIS_ID="8-1:1.2.0*100" USER="52"> 
+<entry> 
+<param NAME="T_MUC">1524175873</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.01" MEDIUM="Water" OBIS_ID="8-1:1.2.0*101" USER="53"> 
+<entry> 
+<param NAME="T_MUC">1524175873</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Error flags (Device type specific)" UNIT="Bin" SCALE="1" MEDIUM="Water" OBIS_ID="0-0:97.97.0*255" USER="ERR"> 
+<entry> 
+<param NAME="T_MUC">1524175873</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.01" MEDIUM="Water" OBIS_ID="8-1:1.2.0*0"> 
+<entry> 
+<param NAME="T_MUC">1524175873</param> 
+<param NAME="VAL">16306</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.01" MEDIUM="Water" OBIS_ID="8-1:1.2.0*1"> 
+<entry> 
+<param NAME="T_MUC">1524175873</param> 
+<param NAME="VAL">15394</param> 
+</entry> 
+</data> 
+</meter> 
+<meter METER_ID="62270051" INTERFACE="05" USER="unused"> 
+</meter> 
+<meter METER_ID="62270052" INTERFACE="05" USER="KW Garten"> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.001" MEDIUM="Water" OBIS_ID="8-1:1.0.0*255" USER="50"> 
+<entry> 
+<param NAME="T_MUC">1524175927</param> 
+<param NAME="VAL">4716</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.01" MEDIUM="Water" OBIS_ID="8-1:1.2.0*100" USER="52"> 
+<entry> 
+<param NAME="T_MUC">1524175927</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.01" MEDIUM="Water" OBIS_ID="8-1:1.2.0*101" USER="53"> 
+<entry> 
+<param NAME="T_MUC">1524175927</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Error flags (Device type specific)" UNIT="Bin" SCALE="1" MEDIUM="Water" OBIS_ID="0-0:97.97.0*255" USER="ERR"> 
+<entry> 
+<param NAME="T_MUC">1524175927</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.01" MEDIUM="Water" OBIS_ID="8-1:1.2.0*0"> 
+<entry> 
+<param NAME="T_MUC">1524175927</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.01" MEDIUM="Water" OBIS_ID="8-1:1.2.0*1"> 
+<entry> 
+<param NAME="T_MUC">1524175927</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+</meter> 
+<meter METER_ID="62270075" INTERFACE="05" USER="KW Does (+192)"> 
+</meter> 
+<meter METER_ID="60900128" INTERFACE="05" USER="EG Werkstatt"> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.0.0*0"> 
+</data> 
+</meter> 
+</muc> 
+</interface> 

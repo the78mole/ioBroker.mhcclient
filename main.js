@@ -34,7 +34,21 @@
 'use strict';
 
 // you have to require the utils module and call adapter function
-var utils =    require(__dirname + '/lib/utils'); // Get common adapter utils
+var fs = require('fs');         // Docs: https://nodejs.org/api/fs.html
+var path = require('path');
+var proc = require('process');
+var utils;
+
+if (proc.argv && proc.argv[1]) {
+    console.log('Proc Argv[1] : ' + proc.argv[1]);
+    var scriptcl = proc.argv[1];
+    console.log('scriptcl : ' + scriptcl);
+    var scriptdir = path.dirname(scriptcl);
+    console.log('scriptdir : ' + scriptdir);
+    utils = require(scriptdir + '/lib/utils');
+} else {
+    utils = require(__dirname + '/lib/utils'); // Get common adapter utils
+}
 
 // you have to call the adapter function and pass a options object
 // name has to be set and has to be equal to adapters folder name and main file name excluding extension
@@ -43,12 +57,21 @@ var adapter = new utils.Adapter('mhcclient');
 
 // Other required packages
 var http = require('http');     // Docs: https://nodejs.org/api/http.html
-var httpserver = http.createServer(serverHandler);
-httpserver.listen(7890);
+var httpenabled;
+var httpport, httphost;
+var httpserver;
+var xmlpath, jsonpath;
+var enablexml, enablejson;
 
-var fs = require('fs');         // Docs: https://nodejs.org/api/fs.html
 var moment = require('moment'); // Docs: http://momentjs.com/docs/#/displaying/format/
 var xml2js = require('xml2js'); // Docs: https://github.com/Leonidas-from-XIV/node-xml2js
+var mkdirp = require('mkdirp'); // Docs: https://www.npmjs.com/package/mkdirp
+
+var interfaces = {
+    '01': 'S0-Bus',
+    '02': 'M-Bus',
+    '05': 'wM-Bus'
+}
 
 
 // is called when adapter shuts down - callback has to be called under any circumstances!
@@ -95,60 +118,77 @@ adapter.on('message', function (obj) {
 // start here!
 adapter.on('ready', function () {
     main();
-    initWebserver();
 });
 
 function main() {
 
     // The adapters config (in the instance object everything under the attribute "native") is accessible via
     // adapter.config:
-    adapter.log.info('config test1: '    + adapter.config.test1);
-    adapter.log.info('config test1: '    + adapter.config.test2);
-    adapter.log.info('config mySelect: ' + adapter.config.mySelect);
+    adapter.log.info('HTTP server port: '    + adapter.config.port);
+    adapter.log.info('HTTP server host: '    + adapter.config.bind);
+    adapter.log.info('XML  log path [' + (adapter.config.output.xml.enable ? 'X' : '-') + ']: '    + adapter.config.output.xml.path);
+    adapter.log.info('JSON log path [' + (adapter.config.output.json.enable ? 'X' : '.') + ']: '    + adapter.config.output.json.path);
 
+    console.log('HTTP server port : '    + adapter.config.port);
+    console.log('HTTP server host : '    + adapter.config.bind);
+    console.log('XML  log path [' + (adapter.config.output.xml.enable ? 'X' : '-') + ']: '    + adapter.config.output.xml.path);
+    console.log('JSON log path [' + (adapter.config.output.json.enable ? 'X' : '.') + ']: '    + adapter.config.output.json.path);
 
-    /**
-     *
-     *      For every state in the system there has to be also an object of type state
-     *
-     *      Here a simple mhcclient for a boolean variable named "testVariable"
-     *
-     *      Because every adapter instance uses its own unique namespace variable names can't collide with other adapters variables
-     *
-     */
+    console.log(JSON.stringify(adapter.config));
 
-    adapter.setObject('testVariable', {
-        type: 'state',
-        common: {
-            name: 'testVariable',
-            type: 'boolean',
-            role: 'indicator'
-        },
-        native: {}
-    });
+    httpenabled = adapter.config.enabled || false;
+    httpport = adapter.config.port || 7890;
+    httphost = adapter.config.bind || '0.0.0.0';
+    xmlpath  = adapter.config.output.xml.path || '/var/data/xml';
+    jsonpath = adapter.config.output.json.path || '/var/data/json';
+    enablexml = adapter.config.output.xml.enable || false;
+    enablejson = adapter.config.output.json.enable || false;
+
+    // Create the directories if enabled
+    if (adapter.config.output) {
+        adapter.log.info("Looping throug log dir paths.");
+
+        var arr = [ adapter.config.output.xml, adapter.config.output.json ];
+        arr.forEach(function(item) {
+            if (item && item.enable && item.path) {
+                if(fs.statSync(item.path).isDirectory) {
+                    adapter.log.info("Directory " + item.path + " already exists. OK.");
+                } else {
+                    adapter.log.info("Directory " + item.path + " will be created.");
+                    mkdirp(item.path, function (err) {
+                        if (err) {
+                            adapter.log.error("Could not create directory " + item.path);
+                        } else {
+                            adapter.log.info("Directory " + item.path + " created.");
+                        }
+                    });
+                }
+            }
+        });
+
+/*        for (var apath in [adapter.config.output.xml, adapter.config.output.json]) {
+            var aconfig = adapter.config.output[apath];
+            adapter.log.info("Checking directory " + aconfig.path + " exists or needs to be created.");
+            if (aconfig && aconfig.enable && aconfig.path) {
+                mkdirp(aconfig.path, function (err) {
+                    if (err) {
+                        adapter.log.error("Could not create directory " + aconfig.path);
+                    } else {
+                        adapter.log.info("Directory " + aconfig.path + " created or exists.");
+                    }
+                });
+            } else {
+                adapter.log.info("Not creating directory " + aconfig.path
+                    + " (" + (aconfig ? "O" : "-") + (aconfig.enable ? "E" : "-") + (aconfig.path ? "P" : "-") + ")");
+            }
+        }
+*/
+    } else {
+        adapter.log.warning("Could not find the output config part.");
+    }
 
     // in this mhcclient all states changes inside the adapters namespace are subscribed
     adapter.subscribeStates('*');
-
-
-    /**
-     *   setState examples
-     *
-     *   you will notice that each setState will cause the stateChange event to fire (because of above subscribeStates cmd)
-     *
-     */
-
-    // the variable testVariable is set to true as command (ack=false)
-    adapter.setState('testVariable', true);
-
-    // same thing, but the value is flagged "ack"
-    // ack should be always set to true if the value is received from or acknowledged from the target system
-    adapter.setState('testVariable', {val: true, ack: true});
-
-    // same thing, but the state is deleted after 30s (getState will return null afterwards)
-    adapter.setState('testVariable', {val: true, ack: true, expire: 30});
-
-
 
     // examples for the checkPassword/checkGroup functions
     adapter.checkPassword('admin', 'iobroker', function (res) {
@@ -159,45 +199,54 @@ function main() {
         console.log('check group user admin group admin: ' + res);
     });
 
-}
-
-function initWebserver() {
-    adapter.log.info("Intializing Webserver on Port " + httpserver.address().port);
+    if (httpenabled) {
+        httpserver = http.createServer(serverHandler);
+        httpserver.listen(httpport, httphost);
+    }
 }
 
 function serverHandler(req, res) {
     var cDate = moment().format("YYYYMMDD_HHmmss");
 
     if(req.method == "POST") {
-        res.writeHead(200, {"Content-Type": "text/plain"} );
+        res.writeHead(200, {"Content-Type": "application/xml"} );
+        console.log("Received a POST request " + req.url + " from ");
         adapter.log.info("Received a POST request " + req.url + " from ");
 
-        var fName = "/tmp/mhc-" + cDate;
-        var xName = fName + ".xml";
-        var jName = fName + ".json";
+        var fName = "mhc_" + cDate;
+        var xName = xmlpath + "/" + fName + ".xml";
+        var jName = jsonpath + "/" + fName + ".json";
 
-        let body = [];
+        var body = [];
         req.on('data', (chunk) => {
+//            console.log("-> Server req on_data called.");
             body.push(chunk);
         }).on('end', () => {
+            console.log("   -> Server req on_end called.");
+            console.log("<- End response");
+            res.end("\n");
             body = Buffer.concat(body).toString();
-            fs.writeFile(xName , body, (err) => {
-                if (err) throw err;
-                if (err) adapter.log.error("An error occured writing the file " + xName + ". Error: " + err);
-                else adapter.log.info("Wrote file " + xName + " successfully.");
-            });
+            if (xmlpath && enablexml) {
+                fs.writeFile(xName, body, (err) => {
+                    if (err) throw err;
+                    if (err) adapter.log.error("An error occured writing the file " + xName + ". Error: " + err);
+                    else adapter.log.info("Wrote file " + xName + " successfully.");
+                });
+            }
             xml2js.parseString(body, (err, result) => {
                 if (err) {
                   throw err;
                   adapter.log.error("An error occured writing the file " + jName + ". Error: " + err2);
                 } else {
-                    fs.writeFile(jName, JSON.stringify(result), (err2) => {
-                        if (err2) {
-                            throw err;
-                            adapter.log.error("An error occured writing the file " + jName + ". Error: " + err2);
-                        }
-                        else adapter.log.info("Wrote file " + jName + " successfully.");
-                    });
+                    if (jsonpath && enablejson) {
+                        fs.writeFile(jName, JSON.stringify(result), (err2) => {
+                            if (err2) {
+                                throw err;
+                                adapter.log.error("An error occured writing the file " + jName + ". Error: " + err2);
+                            }
+                            else adapter.log.info("Wrote file " + jName + " successfully.");
+                        });
+                    }
 
                     processMhcXmlJsRequest(result);
 
@@ -206,11 +255,13 @@ function serverHandler(req, res) {
             // at this point, `body` has the entire request body stored in it as a string
         });
 
-        res.end("Hello POST World Test " + new Date() + "\n");
+//        console.log("<- End response");
+//        res.end("\n");
+//        res.end("Hello POST World Test " + new Date() + "\n");
     } else {
         res.writeHead(200, {"Content-Type": "text/plain"} );
         adapter.log.info("Received a " + req.method + " request " + req.url + " from ");
-        res.end("Hello GET World Test " + new Date() + "\n");
+        res.end("Hello " + req.method + " World Test " + new Date() + "\n");
     }
 }
 
@@ -223,7 +274,7 @@ function setMucVer(mucid, mucver, mucts) {
             native: {}
         },
         function () {
-            adapter.setState(mucid + ".VERSION", {val: mucver, ts: mucts});
+            adapter.setState(mucid + ".VERSION", {val: mucver, ts: mucts, ack: true});
         }
     );
 }
@@ -237,7 +288,7 @@ function createSetState(stateid, statename, stateval, statets) {
             native: {}
         },
         function () {
-            adapter.setState(stateid, {val: stateval, ts: statets});
+            adapter.setState(stateid, {val: stateval, ts: statets}, true);
         }
     );
 }
@@ -245,11 +296,11 @@ function createSetState(stateid, statename, stateval, statets) {
 function setMeterDataSets(sdata, datachid, idata, datauser) {
     var {dval, dts} = extractEntryData(sdata.entry);
     var datascale = sdata.$.SCALE;
-    if(datascale !== undefined && datascale != 0) {
+    var stateidp = datachid + ".";
+    if(datascale) {
         createSetState(stateidp + "RAW", "RAW", dval, dts);
         dval = dval * (datascale !== undefined && datascale != 0 ? datascale : 1);
     }
-    var stateidp = datachid + ".";
     createSetState(stateidp + "SLOT", "SLOT", idata, dts);
     createSetState(stateidp + "USER", "USER", datauser, dts);
     createSetState(stateidp + "VALUE", "VALUE", dval, dts);
@@ -258,28 +309,59 @@ function setMeterDataSets(sdata, datachid, idata, datauser) {
     createSetState(stateidp + "SCALE", "SCALE", datascale, dts);
     createSetState(stateidp + "MEDIUM", "MEDIUM", sdata.$.MEDIUM, dts);
     createSetState(stateidp + "OBIS_ID", "OBIS_ID", sdata.$.OBIS_ID, dts);
+    var retval;
+    var noPrecision = [ 'None', 'UTC', 'Bin' ];
+    var noUnit = [ 'None' ];
+    var dunit = sdata.$.UNIT;
+
+    if (typeof dval == 'number')
+        dval = (noPrecision.indexOf(dunit) > -1 ? dval : dval.toPrecision(5));
+    retval = { val: dval + (noUnit.indexOf(dunit) > -1 ? "" : " " + dunit), ts: dts };
+
+    return retval;
 }
 
 function processMeterDataSet(sdata, mucid, meterif, meterid, meterdata, idata) {
     var datamedium = sdata.$.MEDIUM;
     var datauser = sdata.$.USER;
     var datachid = mucid + "." + meterif + "." + meterid;
-    if (meterdata.length == 1) {
-        setMeterDataSets(sdata, datachid, idata, datauser)
-    } else {
-        datachid = datachid + "." + idata;
-        adapter.setObjectNotExists(
-            datachid,
-            {
-                type: "channel",
-                common: {role: "", name: "Meter Data Set " + idata},
-                native: {}
-            },
-            function () {
-                setMeterDataSets(sdata, datachid, idata, datauser);
-            }
-        );
+    var addid;
+    var chrole = '';
+    if (sdata.$.UNIT && sdata.$.UNIT != 'None') {
+        chrole = 'sensor';
     }
+
+    if (sdata.$.OBIS_ID) {
+        addid = sdata.$.OBIS_ID.replace(/[ -\/^:;.]/g, '_');
+    }
+    else if (sdata.$.USER) {
+        addid = sdata.$.USER.replace(/[ -\/^:;.]/g, '_');
+    }
+    else if (sdata.$.DESCRIPTION) {
+        addid = sdata.$.DESCRIPTION.replace(/[ -\/^:;.]/g, '_');
+    }
+
+    var fullid = datachid + "." + addid;
+
+    adapter.setObjectNotExists(
+        fullid,
+        {
+            type: "channel",
+            common: {role: chrole, name: "Meter Data Set " + idata },
+            native: {}
+        },
+        function () {
+            /* var {dval, dts} = extractEntryData(sdata.entry);
+            var datascale = sdata.$.SCALE;
+            if(datascale) {
+                dval = dval * (datascale ? datascale : 1);
+            }
+            createSetState(datachid, addid, dval, dts); */ 
+            //console.log(JSON.stringify(arguments));
+            var retval = setMeterDataSets(sdata, fullid, idata, datauser);
+            if (retval) adapter.setState(fullid, retval, false);
+        }
+    );
 
     return {datauser, datachid};
 }
@@ -307,9 +389,14 @@ function processInterface(smeter, meterIfDevId, mucts, meters, ameter, mucid, me
             native: {}
         },
         function () {
+
             processMeterData(smeter, meterIdDevId, mucts, meters, ameter, mucid, meterif, meterid);
         }
     );
+}
+
+function lookupIf(busid) {
+    return interfaces[busid];
 }
 
 function processMeter(smeter, mucid, mucts, meters, ameter) {
@@ -323,6 +410,9 @@ function processMeter(smeter, mucid, mucts, meters, ameter) {
             native: {}
         },
         function () {
+            var ifdescval = lookupIf(smeter.$.INTERFACE);
+            if(ifdescval)
+                adapter.setState(meterIfDevId, { val: ifdescval });
             processInterface(smeter, meterIfDevId, mucts, meters, ameter, mucid, meterif);
         });
     return {meterif, meterIfDevId};

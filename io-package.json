@@ -12,10 +12,10 @@
                 "nl": "Eerste release"
             }
         },
-		"title": "Javascript/Node.js based mhcclient adapter",
+		"title": "Messhelden/AHV-Collector client adapter",
         "titleLang": {
-            "en": "Javascript/Node.js based Messhelden Collector Client adapter",
-            "de": "Javascript / Node.js basierter Messhelden Collector Client Adapter",
+            "en": "Messhelden/AHV Collector Client adapter",
+            "de": "Messhelden/AHV-Collector Client Adapter",
             "ru": "Адаптер шаблонов на основе Javascript / Node.js",
             "pt": "Adaptador de modelo baseado em Javascript / Node.js",
             "nl": "Javascript / Node.js gebaseerde sjabloonadapter",
@@ -46,18 +46,32 @@
         "materialize": true,
         "enabled": true,
         "extIcon": "https://raw.githubusercontent.com/the78mole/ioBroker.mhcclient/master/admin/mhcclient.png",
-        "keywords": ["mhcclient", "vis", "GUI", "graphical", "scada"],
+        "keywords": [ "mhcclient", "vis", "GUI", "graphical", "scada" ],
         "readme": "https://github.com/the78mole/ioBroker.mhcclient/blob/master/README.md",
         "loglevel": "info",
         "type": "general",
         "restartAdapters": ["vis"]
     },
     "native": {
-        "test1": true,
-        "test2": 42,
-        "mySelect": "auto"
+        "port"      : 7890,
+        "bind"      : "0.0.0.0",
+        "enabled"   : false,
+        "output" : {
+            "xml": {
+                "path"   : "/var/data/mhcclient/xml/",
+                "enable" : false
+            },
+            "json": {
+                "path"   : "/var/data/mhcclient/json/",
+                "enable" : false
+            }
+        }
     },
-    "objects": [
-
-    ]
+    "objects": [],
+    "config": {
+        "minWidth": 800,
+        "width ": 1024,
+        "minHeight": 800,
+        "height": 900
+    }
 }

@@ -4,3 +4,11 @@ node_modules
 nbproject
 admin/i18n/flat.txt
 admin/i18n/*/flat.txtpackage-lock.json
+/examples/mhc
+tmp.json
+
+/examples/done
+/examples/mhc
+/examples/old
+
+package-lock.json

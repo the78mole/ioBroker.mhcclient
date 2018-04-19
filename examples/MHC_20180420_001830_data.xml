@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<interface MESSAGE_TYPE="1"> 
+<muc MUC_ID="9872f" VERSION="1f6" TIMESTAMP="1524176306"> 
+<meter METER_ID="62270052" INTERFACE="05" USER="KW Garten"> 
+<data DESCRIPTION="Error flags (Device type specific)" UNIT="Bin" SCALE="1" MEDIUM="Water" OBIS_ID="0-0:97.97.0*255" USER="ERR"> 
+<entry> 
+<param NAME="T_MUC">1524175621</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.01" MEDIUM="Water" OBIS_ID="8-1:1.2.0*0"> 
+<entry> 
+<param NAME="T_MUC">1524175621</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.01" MEDIUM="Water" OBIS_ID="8-1:1.2.0*1"> 
+<entry> 
+<param NAME="T_MUC">1524175621</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+</meter> 
+<meter METER_ID="62270075" INTERFACE="05" USER="KW Does (+192)"> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.001" MEDIUM="Water" OBIS_ID="8-1:1.0.0*255" USER="50"> 
+<entry> 
+<param NAME="T_MUC">1524175630</param> 
+<param NAME="VAL">111626</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.01" MEDIUM="Water" OBIS_ID="8-1:1.2.0*0" USER="52"> 
+<entry> 
+<param NAME="T_MUC">1524175630</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volume" UNIT="m^3" SCALE="0.01" MEDIUM="Water" OBIS_ID="8-1:1.2.0*1" USER="53"> 
+<entry> 
+<param NAME="T_MUC">1524175630</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Error flags (Device type specific)" UNIT="Bin" SCALE="1" MEDIUM="Water" OBIS_ID="0-0:97.97.0*255" USER="ERR"> 
+<entry> 
+<param NAME="T_MUC">1524175630</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+</meter> 
+<meter METER_ID="60900128" INTERFACE="05" USER="EG Werkstatt"> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.0.0*0"> 
+<entry> 
+<param NAME="T_MUC">1524175671</param> 
+<param NAME="VAL">298</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="4-1:1.2.0*0" USER="Monat-1"> 
+<entry> 
+<param NAME="T_MUC">1524175671</param> 
+<param NAME="VAL">280</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175671</param> 
+<param NAME="VAL">187</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175671</param> 
+<param NAME="VAL">70</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175671</param> 
+<param NAME="VAL">211</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175671</param> 
+<param NAME="VAL">158</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175671</param> 
+<param NAME="VAL">111</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175671</param> 
+<param NAME="VAL">74</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175671</param> 
+<param NAME="VAL">64</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175671</param> 
+<param NAME="VAL">64</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175671</param> 
+<param NAME="VAL">64</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175671</param> 
+<param NAME="VAL">63</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175671</param> 
+<param NAME="VAL">54</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175671</param> 
+<param NAME="VAL">24</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175671</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175671</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175671</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Units for H. C. A." UNIT="" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175671</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Error flags (Device type specific)" UNIT="Bin" SCALE="1" MEDIUM="Heat cost allocator" OBIS_ID="0-0:97.97.0*255" USER="ERR"> 
+<entry> 
+<param NAME="T_MUC">1524175671</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+</meter> 
+<meter METER_ID="00008739" INTERFACE="02" USER="Garage CE-Steckdose"> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Ampere (vendor specific)" UNIT="A" SCALE="0.001" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy (vendor specific)" UNIT="kWh" SCALE="0.0001" MEDIUM="Electricity" OBIS_ID="1-0:1.8.0*255" USER="E_E"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy (vendor specific)" UNIT="kWh" SCALE="0.0001" MEDIUM="Electricity" OBIS_ID="" USER="E_L1"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy (vendor specific)" UNIT="kWh" SCALE="0.0001" MEDIUM="Electricity" OBIS_ID="" USER="E_L2"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy (vendor specific)" UNIT="kWh" SCALE="0.0001" MEDIUM="Electricity" OBIS_ID="" USER="E_L2"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volts (vendor specific)" UNIT="V" SCALE="0.001" MEDIUM="Electricity" OBIS_ID="1-0:32.7.0*255" USER="U_L1"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">235539</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volts (vendor specific)" UNIT="V" SCALE="0.001" MEDIUM="Electricity" OBIS_ID="1-0:52.7.0*255" USER="U_L2"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">233604</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volts (vendor specific)" UNIT="V" SCALE="0.001" MEDIUM="Electricity" OBIS_ID="1-0:72.7.0*255" USER="U_L3"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">236384</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volts (vendor specific)" UNIT="V" SCALE="0.001" MEDIUM="Electricity" OBIS_ID="" USER="U_E"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">406935</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volts (vendor specific)" UNIT="V" SCALE="0.001" MEDIUM="Electricity" OBIS_ID="" USER="U_L12"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">406274</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volts (vendor specific)" UNIT="V" SCALE="0.001" MEDIUM="Electricity" OBIS_ID="" USER="U_L23"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">408786</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Volts (vendor specific)" UNIT="V" SCALE="0.001" MEDIUM="Electricity" OBIS_ID="" USER="U_L31"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">407337</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Ampere (vendor specific)" UNIT="A" SCALE="0.001" MEDIUM="Electricity" OBIS_ID="" USER="I_E"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Ampere (vendor specific)" UNIT="A" SCALE="0.001" MEDIUM="Electricity" OBIS_ID="1-0:31.7.0*255" USER="I_L1"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Ampere (vendor specific)" UNIT="A" SCALE="0.001" MEDIUM="Electricity" OBIS_ID="1-0:51.7.0*255" USER="I_L2"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Ampere (vendor specific)" UNIT="A" SCALE="0.001" MEDIUM="Electricity" OBIS_ID="1-0:71.7.0*255" USER="I_L3"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Power (vendor specific)" UNIT="W" SCALE="0.001" MEDIUM="Electricity" OBIS_ID="1-0:1.7.0*255" USER="P_E"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Power (vendor specific)" UNIT="W" SCALE="0.001" MEDIUM="Electricity" OBIS_ID="" USER="P_L1"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Power (vendor specific)" UNIT="W" SCALE="0.001" MEDIUM="Electricity" OBIS_ID="" USER="P_L2"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Power (vendor specific)" UNIT="W" SCALE="0.001" MEDIUM="Electricity" OBIS_ID="" USER="P_L3"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">-15536</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">123</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy (vendor specific)" UNIT="kWh" SCALE="0.0001" MEDIUM="Electricity" OBIS_ID="1-0:1.8.0*0"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy (vendor specific)" UNIT="kWh" SCALE="0.0001" MEDIUM="Electricity" OBIS_ID="1-0:1.8.0*1"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy (vendor specific)" UNIT="kWh" SCALE="0.0001" MEDIUM="Electricity" OBIS_ID="1-0:1.8.0*2"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy (vendor specific)" UNIT="kWh" SCALE="0.0001" MEDIUM="Electricity" OBIS_ID="1-0:1.8.0*3"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy (vendor specific)" UNIT="kWh" SCALE="0.0001" MEDIUM="Electricity" OBIS_ID="1-0:1.8.0*4"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy (vendor specific)" UNIT="kWh" SCALE="0.0001" MEDIUM="Electricity" OBIS_ID="1-0:1.8.0*5"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy (vendor specific)" UNIT="kWh" SCALE="0.0001" MEDIUM="Electricity" OBIS_ID="1-0:1.8.0*6"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Energy (vendor specific)" UNIT="kWh" SCALE="0.0001" MEDIUM="Electricity" OBIS_ID="1-0:1.8.0*7"> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+<data DESCRIPTION="Special supplier information" UNIT="None" SCALE="1" MEDIUM="Electricity" OBIS_ID=""> 
+<entry> 
+<param NAME="T_MUC">1524175884</param> 
+<param NAME="VAL">0</param> 
+</entry> 
+</data> 
+</meter> 
+</muc> 
+</interface> 

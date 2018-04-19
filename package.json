@@ -1,45 +1,68 @@
 {
-  "name": "iobroker.mhcclient",
-  "version": "0.0.1",
-  "description": "ioBroker mhcclient Adapter",
+  "_from": "git+https://github.com/the78mole/ioBroker.mhcclient.git",
+  "_id": "iobroker.mhcclient@0.0.1",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/iobroker.mhcclient",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/the78mole/ioBroker.mhcclient.git",
+    "rawSpec": "https://github.com/the78mole/ioBroker.mhcclient.git",
+    "saveSpec": "git+https://github.com/the78mole/ioBroker.mhcclient.git",
+    "fetchSpec": "https://github.com/the78mole/ioBroker.mhcclient.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/the78mole/ioBroker.mhcclient.git#05ac160ce338e5625b1f4cc2c51685e97e937d07",
+  "_spec": "https://github.com/the78mole/ioBroker.mhcclient.git",
+  "_where": "/opt/iobroker",
   "author": {
     "name": "Daniel Glaser",
     "email": "the78mole@chaintronics.com"
   },
+  "bugs": {
+    "url": "https://github.com/the78mole/ioBroker.mhcclient/issues"
+  },
+  "bundleDependencies": false,
   "contributors": [
     {
       "name": "Daniel Glaser",
       "email": "the78mole@chaintronics.com"
     }
   ],
+  "dependencies": {
+    "http": "0.0.0",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.22.1",
+    "xml2js": "^0.4.19"
+  },
+  "deprecated": false,
+  "description": "ioBroker mhcclient Adapter",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "gulp": "^3.9.1",
+    "mocha": "^4.1.0"
+  },
   "homepage": "https://github.com/the78mole/ioBroker.mhcclient",
-  "license": "MIT",
   "keywords": [
     "ioBroker",
     "mhcclient",
     "Smart Home",
     "home automation"
   ],
+  "license": "MIT",
+  "main": "main.js",
+  "name": "iobroker.mhcclient",
   "repository": {
     "type": "git",
-    "url": "https://github.com/the78mole/ioBroker.mhcclient"
+    "url": "git+https://github.com/the78mole/ioBroker.mhcclient.git"
   },
-  "dependencies": {
-    "http": "0.0.0",
-    "moment": "^2.22.1",
-    "xml2js": "^0.4.19"
-  },
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "mocha": "^4.1.0",
-    "chai": "^4.1.2"
-  },
-  "main": "main.js",
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha --exit"
   },
-  "bugs": {
-    "url": "https://github.com/the78mole/ioBroker.mhcclient/issues"
-  },
-  "readmeFilename": "README.md"
+  "version": "0.0.1"
 }
