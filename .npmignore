@@ -8,3 +8,8 @@ node_modules
 test
 .travis.yml
 appveyor.yml
+
+/examples/done
+/examples/mhc
+/examples/old
+tmp.json
