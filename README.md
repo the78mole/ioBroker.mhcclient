@@ -1,5 +1,5 @@
 # ioBroker.mhcclient
-![Logo](admin/mhcclient.png)
+![Logo](https://github.com/the78mole/ioBroker.mhcclient/blob/master/admin/mhcclient.png?raw=true)
 =====================
 
 [![NPM version](http://img.shields.io/npm/v/iobroker.mhcclient.svg)](https://www.npmjs.com/package/iobroker.mhcclient)
