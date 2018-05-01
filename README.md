@@ -1,6 +1,13 @@
-![Logo](admin/mhcclient.png)
 # ioBroker.mhcclient
-=================
+![Logo](admin/mhcclient.png)
+=====================
+
+[![NPM version](http://img.shields.io/npm/v/iobroker.mhcclient.svg)](https://www.npmjs.com/package/iobroker.mhcclient)
+[![License](http://img.shields.io/npm/l/iobroker.mhcclient.svg)](https://www.npmjs.com/package/iobroker.mhcclient)
+[![Downloads](https://img.shields.io/npm/dm/iobroker.mhcclient.svg)](https://www.npmjs.com/package/iobroker.mhcclient)
+[![Issues](https://img.shields.io/github/issues/badges/iobroker.mhcclient.svg)](https://www.npmjs.com/package/iobroker.mhcclient)
+
+[![NPM](https://nodei.co/npm/iobroker.admin.png?downloads=true)](https://nodei.co/npm/iobroker.mhcclient/)
 
 This adapter is for receiving the XML push messages from MH-Collector, which 
 is a Collector for M-Bus-, wM-Bus- ans S0-Sensors. You can get the MH-Collector
