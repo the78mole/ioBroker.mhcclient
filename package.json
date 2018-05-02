@@ -1,6 +1,6 @@
 {
   "_from": "git+https://github.com/the78mole/ioBroker.mhcclient.git",
-  "_id": "iobroker.mhcclient@0.0.1",
+  "_id": "iobroker.mhcclient@0.1.0",
   "_inBundle": false,
   "_integrity": "",
   "_location": "/iobroker.mhcclient",
