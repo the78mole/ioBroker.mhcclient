@@ -1,8 +1,12 @@
 {
     "common": {
         "name": "mhcclient",
-        "version": "0.1.1",
+        "version": "0.1.2",
         "news": {
+			"0.1.2": {
+				"de": "Ausführliche OBIS-ID Liste",
+				"en": "Extensive OBIS-ID list"
+			},
             "0.0.1": {
                 "en": "initial adapter",
                 "de": "Initiale Version",
