@@ -168,23 +168,6 @@ function main() {
             }
         });
 
-/*        for (var apath in [adapter.config.output.xml, adapter.config.output.json]) {
-            var aconfig = adapter.config.output[apath];
-            adapter.log.info("Checking directory " + aconfig.path + " exists or needs to be created.");
-            if (aconfig && aconfig.enable && aconfig.path) {
-                mkdirp(aconfig.path, function (err) {
-                    if (err) {
-                        adapter.log.error("Could not create directory " + aconfig.path);
-                    } else {
-                        adapter.log.info("Directory " + aconfig.path + " created or exists.");
-                    }
-                });
-            } else {
-                adapter.log.info("Not creating directory " + aconfig.path
-                    + " (" + (aconfig ? "O" : "-") + (aconfig.enable ? "E" : "-") + (aconfig.path ? "P" : "-") + ")");
-            }
-        }
-*/
     } else {
         adapter.log.warning("Could not find the output config part.");
     }
@@ -212,8 +195,8 @@ function serverHandler(req, res) {
 
     if(req.method == "POST") {
         res.writeHead(200, {"Content-Type": "application/xml"} );
-        console.log("Received a POST request " + req.url + " from ");
-        adapter.log.info("Received a POST request " + req.url + " from ");
+        console.log("Received a POST request " + req.url + " from " + req.headers.host);
+        adapter.log.info("Received a POST request " + req.url + " from " + req.headers.host);
 
         var fName = "mhc_" + cDate;
         var xName = xmlpath + "/" + fName + ".xml";
@@ -296,13 +279,15 @@ function createSetState(stateid, statename, stateval, statets) {
 }
 
 function setMeterDataSets(sdata, datachid, idata, datauser) {
-    var {dval, dts} = extractEntryData(sdata.entry);
+    var {dval, dts, devts, mucts} = extractEntryData(sdata.entry);
     var datascale = sdata.$.SCALE;
     var stateidp = datachid + ".";
+    createSetState(stateidp + "RAW", "RAW", dval, dts);
     if(datascale) {
-        createSetState(stateidp + "RAW", "RAW", dval, dts);
         dval = dval * (datascale !== undefined && datascale != 0 ? datascale : 1);
     }
+    createSetState(stateidp + "DEVTS", "DEVTS", devts, dts);
+    createSetState(stateidp + "MUCTS", "MUCTS", mucts, dts);
     createSetState(stateidp + "SLOT", "SLOT", idata, dts);
     createSetState(stateidp + "USER", "USER", datauser, dts);
     createSetState(stateidp + "VALUE", "VALUE", dval, dts);
@@ -461,6 +446,7 @@ function processMhcXmlJsRequest(result) {
 
 function extractEntryData(entries) {
     var dval = null, dts = null;
+    var ddevts = null, dmucts = null;
     for (var anentry in entries) {
         var params = entries[anentry].param;
 
@@ -469,9 +455,11 @@ function extractEntryData(entries) {
             switch (tmp.$.NAME) {
                 case "T":
                     dts = tmp._;
+                    ddevts = tmp._;
                     break;
                 case "T_MUC":
                     if (dts == null) dts = tmp._;
+                    dmucts = tmp._;
                     break;
                 case "VAL":
                     dval = tmp._;
@@ -482,5 +470,5 @@ function extractEntryData(entries) {
             }
         }
     }
-    return { dval, dts };
+    return { dval, dts, ddevts, dmucts };
 }
