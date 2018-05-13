@@ -204,7 +204,6 @@ function serverHandler(req, res) {
 
         var body = [];
         req.on('data', (chunk) => {
-//            console.log("-> Server req on_data called.");
             body.push(chunk);
         }).on('end', () => {
             console.log("   -> Server req on_end called.");
@@ -240,9 +239,6 @@ function serverHandler(req, res) {
             // at this point, `body` has the entire request body stored in it as a string
         });
 
-//        console.log("<- End response");
-//        res.end("\n");
-//        res.end("Hello POST World Test " + new Date() + "\n");
     } else {
         res.writeHead(200, {"Content-Type": "text/plain"} );
         adapter.log.info("Received a " + req.method + " request " + req.url + " from ");
@@ -279,15 +275,18 @@ function createSetState(stateid, statename, stateval, statets) {
 }
 
 function setMeterDataSets(sdata, datachid, idata, datauser) {
-    var {dval, dts, devts, mucts} = extractEntryData(sdata.entry);
+    var {dval, dts, ddevts, dmucts} = extractEntryData(sdata.entry);
     var datascale = sdata.$.SCALE;
     var stateidp = datachid + ".";
     createSetState(stateidp + "RAW", "RAW", dval, dts);
     if(datascale) {
         dval = dval * (datascale !== undefined && datascale != 0 ? datascale : 1);
     }
-    createSetState(stateidp + "DEVTS", "DEVTS", devts, dts);
-    createSetState(stateidp + "MUCTS", "MUCTS", mucts, dts);
+    createSetState(stateidp + "DEVTS", "DEVTS", ddevts, dts);
+    createSetState(stateidp + "MUCTS", "MUCTS", dmucts, dts);
+    createSetState(stateidp + "DATETIME", "DATETIME", moment(dts, "X").format(), dts);
+    createSetState(stateidp + "DEVDATETIME", "DEVDATETIME", moment(ddevts, "X").format(), dts);
+    createSetState(stateidp + "MUCDATETIME", "MUCDATETIME", moment(dmucts, "X").format(), dts);
     createSetState(stateidp + "SLOT", "SLOT", idata, dts);
     createSetState(stateidp + "USER", "USER", datauser, dts);
     createSetState(stateidp + "VALUE", "VALUE", dval, dts);
@@ -454,12 +453,12 @@ function extractEntryData(entries) {
             var tmp = params[aparam];
             switch (tmp.$.NAME) {
                 case "T":
-                    dts = tmp._;
                     ddevts = tmp._;
+                    dts = tmp._;
                     break;
                 case "T_MUC":
-                    if (dts == null) dts = tmp._;
                     dmucts = tmp._;
+                    if (dts == null) dts = tmp._;
                     break;
                 case "VAL":
                     dval = tmp._;
