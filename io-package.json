@@ -1,8 +1,12 @@
 {
     "common": {
         "name": "mhcclient",
-        "version": "0.1.2",
+        "version": "0.1.3",
         "news": {
+			"0.1.3": {
+				"de": "Hinweis auf Einstellung der MH-Collector-Hardware in README",
+				"en": "Reflected MH-Collector discontinuation in README"
+			},
 			"0.1.2": {
 				"de": "Ausführliche OBIS-ID Liste",
 				"en": "Extensive OBIS-ID list"

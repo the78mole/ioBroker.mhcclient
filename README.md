@@ -9,6 +9,14 @@
 
 [![NPM](https://nodei.co/npm/iobroker.mhcclient.png?downloads=true)](https://nodei.co/npm/iobroker.mhcclient/)
 
+<div style="background-color: #FF7777; border: rounded">
+The company <a href="https://messhelden.de">Messhelden</a> was taken over by <a href="https://comgy.io">comgy</a>. It seems, that the MH-Collector is discontinued.</div><br/>
+
+<div style="background-color: #FFFF77">I strongly believe, it can be substituted by <a href="https://www.solvimus.de/m-bus-produkte/">solvimus' MUC easy.plus</a> directly, which was the white-label manufacturer of the MH-Collector. The MUC easy.plus seems to be the successor of the MUC easy, which was identically constructed as the MH-Collector.</div><br/>
+
+<div style="background-color: #77FF77; border: rounded">If you are looking for some other solution with the same functionality, you should take a Raspberry Pi with some wM-bus-USB-stick and some M-Bus-USB-Adapter. Configure the RasPi as an iobroker slave and install the adapters <a href="https://github.com/ISFH/ioBroker.wmbus">iobroker.wmbus</a> (do not confuse it with iobroker.wm-bus, the latter one works not as smooth) and <a href="https://www.npmjs.com/package/iobroker.mbus">iobroker.mbus</a> on it.
+</div><br/>
+
 This adapter is for receiving the XML push messages from MH-Collector, which 
 is a Collector for M-Bus-, wM-Bus- ans S0-Sensors. You can get the MH-Collector
 and a lot of measurement equipment (Liquid Flow Meters, Heat Flow Meters, 
